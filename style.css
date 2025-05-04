@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Header and Nav */
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Soft purple-blue gradient */
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Underline on hover and active */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+nav a:hover::after,
+nav a:focus::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+ 
+  padding: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #2f4858;
+  font-size: xx-large;
+  padding-left: 350px;
+  position: relative;
+  line-height: 10px;
+}
+
+/* Scroll Arrow */
+.scroll-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Section Backgrounds */
+#about {
+  background:powderblue; /* Soft gray */
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #000;
+}
+
+#skills {
+  background:pink; /* Pale cyan */
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #000;
+}
+
+#projects {
+  background: #ffe0b2; /* Light orange-peach */
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #000;
+}
+
+#contact {
+  background:paleturquoise; /* Soft lavender */
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #000;
+}
+
+/* List Styling */
+#skills ul,
+#projects ul,
+#contact ul,
+#about ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills li,
+#projects li,
+#contact li,
+#about li {
+  margin-bottom: 0.5rem;
+}
+
+/* Section Headings */
+.section h2 {
+  color: #0d47a1;
+}
+
+/* Footer */
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
